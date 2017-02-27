@@ -1,6 +1,7 @@
 <h1>
   {{title}}
-  <ul>
-    <li *ngFor="let hero of heroes">{{ hero.id }}.) {{ hero.name }}</li>
-  </ul>
 </h1>
+<ul>
+  <li *ngFor="let hero of heroes">{{ hero.id }}.) {{ hero.name }}</li>
+</ul>
+<p *ngIf="age < 40">Ett stycke som ej syns. {{age}}</p>
