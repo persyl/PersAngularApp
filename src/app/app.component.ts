@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Hero } from './hero';
 import {HeroService} from './hero.service';
 
@@ -8,10 +8,14 @@ import {HeroService} from './hero.service';
   styleUrls: ['./app.component.css'],
   providers: [HeroService]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'Pers Angular (2) app works!';
   heroes: Hero[];
-  age:number = 43;
+  age:number = 30;
+
+  ngOnInit(){
+    this.age = 43;
+  }
 
   constructor(private heroService: HeroService){
     this.heroService.getHeroes().then(heroes => this.heroes = heroes);
