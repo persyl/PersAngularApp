@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
   heroes: Hero[];
   age:number = 30;
   greeting:string = 'Change this text...';
+  beers:Array<string> = ['IPA', 'APA', 'DIPA', 'Session'];
 
   ngOnInit(){
     this.age = 43;
