@@ -4,7 +4,10 @@
 <ul>
   <li *ngFor="let hero of heroes">{{ hero.id }}.) {{ hero.name }}</li>
 </ul>
-<p *ngIf="age < 40">Ett stycke som ej syns. {{age}}</p>
+
+<button (click)="onClick()">Click me!</button>
+
+<p *ngIf="age < 40">An invisible paragraph. {{age}}</p>
 <p myHighlight>Highlighted text with a directive!</p>
 
 <!-- Two ways of showing a property value from the model -->

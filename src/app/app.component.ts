@@ -22,4 +22,8 @@ export class AppComponent implements OnInit {
   constructor(private heroService: HeroService){
     this.heroService.getHeroes().then(heroes => this.heroes = heroes);
   }
+
+  onClick(){
+    alert(`Greeting = ${this.greeting}`);
+  }
 }
