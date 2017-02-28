@@ -1,9 +1,11 @@
 <h1>
   {{title}}
 </h1>
-<ul>
-  <li *ngFor="let hero of heroes">{{ hero.id }}.) {{ hero.name }}</li>
+<ul class="tasks">
+  <li *ngFor="let task of tasks"><b>{{ task.title }}</b><br />{{ task.description }}</li>
 </ul>
+<h2>All tasks piped as JSON</h2>
+<p>{{tasks | json}}</p>
 
 <button (click)="onClick()">Click me!</button>
 
@@ -16,6 +18,3 @@
 <br />
 <!-- With [(ngModel)] -->
 <input class="greeting" type="text" [(ngModel)]="greeting" />
-
-<h2>Some beer categories piped as JSON</h2>
-<span>{{beers | json}}</span>
