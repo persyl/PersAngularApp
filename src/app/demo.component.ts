@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: 'demo',
+  templateUrl: './demo.component.html',
+  styleUrls: ['./demo.component.css'],
 })
-export class AppComponent implements OnInit {
-  title = 'Pers Angular (2) app works!';
+export class DemoComponent implements OnInit {
+  title:string = 'Demo component!';
   age:number = 30;
   greeting:string = 'Change this text...';
 

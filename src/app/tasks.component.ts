@@ -9,6 +9,7 @@ import {Task} from './task'
   styleUrls: ['./tasks.component.css'],
 })
 export class TasksComponent {
+  title:string = 'Tasks Component!';
   tasks: Task[];
 
   constructor(private taskService: TaskService){

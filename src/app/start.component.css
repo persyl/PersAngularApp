@@ -1,0 +1,18 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  font-size:14px;
+  line-height:16px;
+}
+h1 {
+  color: #369;
+  font-size: 250%;
+}
+section {
+  background-color: #eeeeee;
+  padding:10px;
+}
+.active {
+  font-weight:bold;
+}
