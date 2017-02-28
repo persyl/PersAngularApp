@@ -1,11 +1,8 @@
 <h1>
   {{title}}
 </h1>
-<ul class="tasks">
-  <li *ngFor="let task of tasks"><b>{{ task.title }}</b><br />{{ task.description }}</li>
-</ul>
-<h2>All tasks piped as JSON</h2>
-<p>{{tasks | json}}</p>
+
+<tasks></tasks>
 
 <button (click)="onClick()">Click me!</button>
 

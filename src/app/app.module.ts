@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import {TasksComponent} from './tasks.component';
 import { HighlightDirective } from './highlight.directive'; //My own custom directive
 
 @NgModule({
   declarations: [
     AppComponent,
+    TasksComponent,
     HighlightDirective
   ],
   imports: [
