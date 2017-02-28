@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
   title = 'Pers Angular (2) app works!';
   heroes: Hero[];
   age:number = 30;
-  greeting:string = 'Text for the input field';
+  greeting:string = 'Change this text...';
 
   ngOnInit(){
     this.age = 43;

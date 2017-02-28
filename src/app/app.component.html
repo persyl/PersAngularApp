@@ -6,4 +6,10 @@
 </ul>
 <p *ngIf="age < 40">Ett stycke som ej syns. {{age}}</p>
 <p myHighlight>Highlighted text with a directive!</p>
-<input class="greeting" type="text" [value]="greeting" />
+
+<!-- Two ways of showing a property value from the model -->
+<!-- With [value] -->
+<input class="greeting" type="text" [value]="greeting" (keyup)="greeting = $event.target.value" />
+<br />
+<!-- With [(ngModel)] -->
+<input class="greeting" type="text" [(ngModel)]="greeting" />
