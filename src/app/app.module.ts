@@ -7,6 +7,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { StartComponent } from './start.component';
 import { DemoComponent } from './demo.component';
 import { TasksComponent } from './tasks.component';
+import {PokemonListComponent} from './pokemon/pokemon-list.component';
 import { HighlightDirective } from './highlight.directive'; //My own custom directive
 
 @NgModule({
@@ -14,6 +15,7 @@ import { HighlightDirective } from './highlight.directive'; //My own custom dire
     StartComponent,
     DemoComponent,
     TasksComponent,
+    PokemonListComponent,
     HighlightDirective
   ],
   imports: [
