@@ -8,6 +8,7 @@ import { StartComponent } from './start.component';
 import { DemoComponent } from './demo.component';
 import { TasksComponent } from './tasks.component';
 import {PokemonListComponent} from './pokemon/pokemon-list.component';
+import { PokemonDetailComponent } from "./pokemon/pokemon-detail.component";
 import { PokemonService } from "./pokemon/pokemon.service";
 import { HighlightDirective } from './highlight.directive'; //My own custom directive
 
@@ -17,6 +18,7 @@ import { HighlightDirective } from './highlight.directive'; //My own custom dire
     DemoComponent,
     TasksComponent,
     PokemonListComponent,
+    PokemonDetailComponent,
     HighlightDirective
   ],
   imports: [

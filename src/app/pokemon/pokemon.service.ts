@@ -32,6 +32,36 @@ export class PokemonService {
     .catch(this.handleError);
   }
 
+  get(id: number) {
+    let headers = new Headers();
+    headers.append("Content-Type", "application/json");
+
+    return this.http.get("http://pokeapi.co/api/v2/pokemon/" + id + "/", {
+      headers: headers
+    })
+    .toPromise()
+    .then((res: Response) => {
+      let data = res.json();
+      let pokemon = new Pokemon();
+      pokemon.name = data.name;
+      pokemon.id = data.id;
+
+      data.types.forEach((eachType) => {
+        pokemon.types.push(eachType.type.name);
+      });
+
+      data.stats.forEach((eachStat) => {
+        pokemon.stats.push({
+          name: eachStat.stat.name,
+          value: eachStat.base_stat
+        });
+      });
+
+      return pokemon;
+    })
+    .catch(this.handleError);
+  }
+
   private handleError (error: Response | any) {
     let errMsg: string;
     if (error instanceof Response) {
