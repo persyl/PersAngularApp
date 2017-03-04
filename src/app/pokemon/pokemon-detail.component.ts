@@ -8,6 +8,7 @@ import { PokemonService } from "./pokemon.service";
   selector: "app-details",
   //moduleId: module.id,
   templateUrl: "./pokemon-detail.component.html",
+  styleUrls: ['./pokemon.component.css'],
 })
 export class PokemonDetailComponent implements OnInit {
   pokemon = new Pokemon();
