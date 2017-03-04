@@ -8,6 +8,7 @@ import { StartComponent } from './start.component';
 import { DemoComponent } from './demo.component';
 import { TasksComponent } from './tasks.component';
 import {PokemonListComponent} from './pokemon/pokemon-list.component';
+import { PokemonService } from "./pokemon/pokemon.service";
 import { HighlightDirective } from './highlight.directive'; //My own custom directive
 
 @NgModule({
@@ -24,7 +25,7 @@ import { HighlightDirective } from './highlight.directive'; //My own custom dire
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers:[PokemonService],
   bootstrap: [StartComponent]
 })
 export class AppModule { }

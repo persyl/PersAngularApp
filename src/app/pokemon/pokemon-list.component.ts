@@ -7,7 +7,6 @@ import { PokemonService } from "./pokemon.service";
   selector: "all-list",
   //moduleId: module.id,
   templateUrl: "./pokemon-list.component.html",
-  providers:[PokemonService]
 })
 export class PokemonListComponent implements OnInit {
   pokemon: Pokemon[];
