@@ -1,8 +1,8 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 
-import { DemoComponent } from './demo.component';
-import {TasksComponent} from './tasks.component';
+import { DemoComponent } from './demo/demo.component';
+import {TasksComponent} from './tasks/tasks.component';
 import {PokemonListComponent} from './pokemon/pokemon-list.component';
 import { PokemonDetailComponent } from "./pokemon/pokemon-detail.component";
 

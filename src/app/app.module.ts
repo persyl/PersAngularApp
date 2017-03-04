@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from "./app-routing.module";
-import { StartComponent } from './start.component';
-import { DemoComponent } from './demo.component';
-import { TasksComponent } from './tasks.component';
+import { AppComponent } from './app.component';
+import { DemoComponent } from './demo/demo.component';
+import { TasksComponent } from './tasks/tasks.component';
 import {PokemonListComponent} from './pokemon/pokemon-list.component';
 import { PokemonDetailComponent } from "./pokemon/pokemon-detail.component";
 import { PokemonService } from "./pokemon/pokemon.service";
@@ -14,7 +14,7 @@ import { HighlightDirective } from './highlight.directive'; //My own custom dire
 
 @NgModule({
   declarations: [
-    StartComponent,
+    AppComponent,
     DemoComponent,
     TasksComponent,
     PokemonListComponent,
@@ -28,6 +28,6 @@ import { HighlightDirective } from './highlight.directive'; //My own custom dire
     HttpModule
   ],
   providers:[PokemonService],
-  bootstrap: [StartComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
